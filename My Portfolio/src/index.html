@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="nav">
+        <div class="container flex items-center justify-between h-16 md:h-16">
+            <h1 class="relative z-30 font-semibold text-2xl">HectorJBD
+            </h1>
+        
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+
+            <!-- MENU LIST -->
+                <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </ul>
+
+                <!-- Mobile Menu -->
+
+                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+                    <img  src="/images/icons/icon-menu.svg" alt="menu">
+                </button>
+
+                <!-- Toggle Theme -->
+
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img class="md:opacity-70 w-7 md:-mt-1" src="/images/icons/icon-dark.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    <main class="container">
+
+        <!-- Home Section -->
+
+        <section id="home" class="home-section">
+            <div class="order-2 md:order-1 mt-10">
+                <h2 class="text-4xl md:text-6xl font-bold">Hi,</h2>
+                <h2 class="text-4xl md:text-6xl font-bold mt-2">I'm <span class="text-primary">Hector Brito</span></h2>
+                <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">I'm a <span class="multitext"></span></h3>
+                <a href="#portfolio" class="btn-primary">
+                    See my work
+                </a>
+            </div>
+            <div class="container-hero-image">
+                <img class="w-11/12 h-full object-cover opacity-90 object-center airplane" src="/images/image.png" alt="Airplane">
+            </div>
+        </section>
+
+        <!-- About Section -->
+
+        <section id="about" class="py-32">
+
+            <!-- Describe -->
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+                <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary ">
+                    <img class="w-full h-full object-cover opacity-90
+                    " src="/images/Hector Brito.png" alt="">
+                </div>
+                <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+                    <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
+                        Hi, I'm Hector Brito
+                    </h2>
+                    <p class="mb-3 opacity-80">
+                        My goal is to get a job that allows me to grow personally and professionally. Expand my experiences and
+                        knowledge in my sector and in the different areas of the company, in order to develop myself professionally to good performance of assigned duties
+                    </p>
+                    
+                </div>
+            </div>
+            <!-- My Skills -->
+ 
+            <div class="mt-32 text-center">
+                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+                    My Skills
+                </h2>
+                <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+                    <div class="skill" data-text="HTML">
+                        <img class="w-16" src="/images/html.png" alt="HTML5">
+                    </div>
+                    <div class="skill" data-text="CSS">
+                        <img class="w-16" src="/images/css.png" alt="CSS">
+                    </div>
+                    <div class="skill" data-text="JavaScript">
+                        <img class="w-16" src="/images/javascript.png" alt="JavaScript">
+                    </div>
+                    <div class="skill" data-text="Tailwind">
+                        <img class="w-16" src="/images/tailwindcss.png" alt="Tailwind">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dots -->
+        <div class=" flex items-center justify-between gap-3 w-full">
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4"></div>
+            <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+        </div>
+
+        <!-- Portfolio Section -->
+
+        <section id="portfolio" class="pt-32">
+          <h2 class="portfolio-heading">
+            My Portfolio
+          </h2>
+          <ul class="w-full md:w-5/6 space-y-10 py-5 md:mx-auto">
+
+            <!-- Portfolio List -->
+            <li class="portfolio-card">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="/images/desktop-design4.jpg" alt="Portfolio">
+                </div>
+                <div class="w-full md:w-2/3 p-5 text-center">
+                    <h2 class="text-3xl font-bold mb-3">
+                        Manager Landing Page
+                    </h2>
+                    
+                    <div class="mt-8 font-semibold text-white flex items-center gap-2 justify-center">
+                        <a href="https://github.com/hectorjbd/Manage-Landing-Page-Master" class="portfolio-link bg-primary">
+                            <img class="w-5 h-5" src="/images/icons/github.svg" alt="">
+                            Github
+                        </a>
+                        <a href="https://manage-landing-page-master-hjbd.netlify.app/" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                            <img class="h-5 w-5" src="/images/icons/web.svg" alt="">
+                            Website
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="portfolio-card md:flex-row-reverse">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="/images/mobile-design.jpg" alt="Portfolio">
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h2 class="text-3xl font-bold mb-3 text-center">
+                        Chat App
+                    </h2>
+                    
+                    <div class="mt-8 font-semibold text-white flex items-center justify-center gap-2">
+                        <a href="https://github.com/hectorjbd/App-chat-" class="portfolio-link bg-primary">
+                            <img class="w-5 h-5 object-cover" src="/images/icons/github.svg" alt="">
+                            Github
+                        </a>
+                        <a href="https://chat-app-hjbd.netlify.app/" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                            <img class="h-5 w-5" src="/images/icons/web.svg" alt="">
+                            Website
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="portfolio-card">
+                <div class="w-full md:w-1/3 h-60">
+                    <img class="h-full w-full object-cover" src="/images/desktop-design3.jpg" alt="Portfolio">
+                </div>
+                <div class="w-full md:w-2/3 p-5">
+                    <h2 class="text-3xl font-bold mb-3 text-center">
+                       Clipboard
+                    </h2>
+                    
+                    <div class="mt-8 font-semibold text-white flex items-center justify-center gap-2">
+                        <a href="https://github.com/hectorjbd/Clipboard-Landing-Page" class="portfolio-link bg-primary">
+                            <img class="w-5 h-5" src="/images/icons/github.svg" alt="">
+                            Github
+                        </a>
+                        <a href="https://clipboard-landing-page-hjbd.netlify.app/" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                            <img class="h-5 w-5" src="/images/icons/web.svg" alt="">
+                            Website
+                        </a>
+                    </div>
+                </div>
+            </li>
+          </ul>  
+        </section>
+    </main>
+
+    <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+
+        <!-- Contact Section -->
+
+        <section id="contact" class="flex flex-col gap-12 justify-center items-center py-20">
+            <h2 class="text-4xl md-text-5xl font-bold text-primary">
+                Contact
+            </h2>
+            <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+                <a href="https://www.facebook.com/hector.b.diaz.1">
+                    <img class="contact-link bg-blue-500" src="/images/icons/icon-facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/hectorjbd/">
+                    <img class="contact-link bg-pink-500" src="/images/icons/icon-instagram.svg" alt="instagram">
+                </a>
+                <a href="https://twitter.com/HectorJbd">
+                    <img class="contact-link bg-blue-400" src="/images/icons/icon-twitter.svg" alt="twitter">
+                </a>
+                <a href="https://github.com/hectorjbd">
+                    <img class="contact-link bg-gray-500" src="/images/icons/github.svg" alt="Github">
+                </a>
+                
+            </div>
+        </section>
+        <h2 class="pb-10">
+            &copy; Copyright 2022 - Hector Brito
+        </h2>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
